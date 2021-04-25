@@ -12,9 +12,11 @@ porcSegTrim = Math.floor((((diffDays/7)-13.5)/13.5)*100)
 porcTotalEmbarazo = (1-(diffDays/15))*100
 console.log(porcTotalEmbarazo + "% Total")
 
-document.getElementById("porcNivel").innerHTML = porcTotalEmbarazo + "%"
+document.getElementById("porcNivel").innerHTML = Math.floor(porcTotalEmbarazo) + "%"
 document.getElementById("totalSemanas").innerHTML =  Math.floor((diffDays)) + " dias restantes"
 document.getElementById("totalBar").style.width = porcTotalEmbarazo + "%"
+document.getElementById("porc750").innerHTML = "0%"
+document.getElementById("totalBar750").style.width = "0%"
 
 
 
